@@ -1,0 +1,152 @@
+.container {
+    position: relative;
+    max-width: 1230px;
+    margin: 90px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 717px) {
+        margin: 160px auto;
+    }
+
+    @media (max-width: 482px) {
+        margin: 200px auto;
+    }
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: #fff;
+}
+
+.card {
+    flex: 0 1 29.333%;
+    margin: 2%;
+    box-shadow: 10px 10px 10px rgb(0 0 0 / 40%);
+
+    &__body {
+        position: relative;
+    }
+
+    .more_hide {
+        position: relative;
+        z-index: 10;
+        color: #1765ae;
+        cursor: pointer;
+    }
+
+    .info {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        background-color: #fff;    
+
+        &.active {
+            display: block;
+        }
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    span {
+        color: #fff;
+        padding: 2px 15px;
+        margin-right: 10px;
+        border-radius: 3px;
+    }
+
+    @media (max-width: 717px) {
+        flex: 0 1 46%;
+        margin: 2%;
+    }
+
+    @media (max-width: 482px) {
+        flex: 0 1 96%;
+        margin: 2%;
+    }
+
+    .normal {
+        background-color: #a8a878;
+    }
+    
+    .fire {
+        background-color: #f08030;
+    }
+    
+    .water {
+        background-color: #6890f0;
+    }
+    
+    .grass {
+        background-color: #78c850;
+    }
+    
+    .electric {
+        background-color: #f8d030;
+    }
+    
+    .ice {
+        background-color: #98d8d8;
+    }
+    
+    .fighting {
+        background-color: #c03028;
+    }
+    
+    .poison {
+        background-color: #a040a0;
+    }
+    
+    .ground {
+        background-color: #e0c068;
+    }
+    
+    .flying {
+        background-color: #a890f0;
+    }
+    
+    .psychic {
+        background-color: #f85888;
+    }
+    
+    .bug {
+        background-color: #a8b820;
+    }
+    
+    .rock {
+        background-color: #b8a038;
+    }
+    
+    .ghost {
+        background-color: #705898;
+    }
+    
+    .dark {
+        background-color: #705848;
+    }
+    
+    .dragon {
+        background-color: #6f37f6;
+    }
+    
+    .steel {
+        background-color: #b8b8d0;
+    }
+    
+    .fairy {
+        background-color: #c2abad;
+    }
+}
+
